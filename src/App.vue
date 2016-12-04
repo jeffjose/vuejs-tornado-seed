@@ -5,15 +5,15 @@
   </div>
 </template>
 
-<script>
-import Hello from './components/Hello'
+<script lang="coffee">
 
-export default {
-  name: 'app',
-  components: {
-    Hello
-  }
-}
+Hello = require './components/Hello'
+
+module.exports =
+
+  name: 'app'
+  components: {Hello}
+
 </script>
 
 <style>
