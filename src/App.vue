@@ -16,7 +16,10 @@ module.exports =
 </script>
 
 <style lang="less">
+
+@import "static/bootstrap/app-customizations.less";
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  //font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 </style>
