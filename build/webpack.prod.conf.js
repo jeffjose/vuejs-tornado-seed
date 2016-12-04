@@ -78,12 +78,12 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // For python files
     new CopyWebpackPlugin([
-            {from: './app.py'}
+            {from: './src/app.py'}
     ]),
     // Favicon
     new FaviconsWebpackPlugin({
 
-       logo: './static/favicons/prod.png',
+       logo: './src/static/favicons/prod.png',
        prefix: './static/icons-[hash]/',
     }),
   ]
