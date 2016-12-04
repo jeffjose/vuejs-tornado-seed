@@ -1,6 +1,7 @@
 <template>
-  <div class="container-fluid">
+  <div>
       <button class="btn btn-primary">testing</button>
+      {{msg}}
   </div>
 </template>
 

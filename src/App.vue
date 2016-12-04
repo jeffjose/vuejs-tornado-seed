@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div id="app" class="container-fluid">
+      <navbar></navbar>
   </div>
 </template>
 
 <script lang="coffee">
 
-Hello = require './components/Hello'
+Navbar = require './components/Navbar'
 
 module.exports =
 
   name: 'app'
-  components: {Hello}
+  components: {Navbar}
 
 </script>
 
 <style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
