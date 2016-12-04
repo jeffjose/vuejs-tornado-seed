@@ -27,4 +27,15 @@ module.exports =
 
 <style scoped lang="less">
 
+@import "../static/bootstrap/material-colors.less";
+
+.nav-link {
+    padding-bottom: 0px;
+    &:hover {
+        border-bottom: 3px solid @clr-red;
+        color: white !important;
+    }
+
+}
+
 </style>
