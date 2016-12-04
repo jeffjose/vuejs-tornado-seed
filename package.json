@@ -11,6 +11,7 @@
   "dependencies": {
     "coffee-loader": "^0.7.2",
     "copy-webpack-plugin": "^4.0.1",
+    "favicons-webpack-plugin": "0.0.7",
     "vue": "^2.1.0",
     "vue-router": "^2.1.1",
     "vuex": "^2.0.0"

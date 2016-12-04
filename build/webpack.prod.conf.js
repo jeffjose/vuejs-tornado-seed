@@ -7,6 +7,7 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
@@ -79,6 +80,12 @@ var webpackConfig = merge(baseWebpackConfig, {
     new CopyWebpackPlugin([
             {from: './app.py'}
     ]),
+    // Favicon
+    new FaviconsWebpackPlugin({
+
+       logo: './static/favicons/prod.png',
+       prefix: './static/icons-[hash]/',
+    }),
   ]
 })
 

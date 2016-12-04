@@ -4,6 +4,7 @@ var merge = require('webpack-merge')
 var utils = require('./utils')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -29,6 +30,24 @@ module.exports = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true
-    })
+    }),
+    // Favicon
+    new FaviconsWebpackPlugin({
+       logo: './static/favicons/dev.png',
+       prefix: './static/icons-[hash]/',
+
+        icons: {
+          android: false,
+          appleIcon: false,
+          appleStartup: false,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        }
+    }),
   ]
 })
