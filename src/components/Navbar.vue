@@ -29,8 +29,15 @@ module.exports =
 
 @import "../static/bootstrap/material-colors.less";
 
+.navbar {
+    box-shadow: 0px 2px 9px #888888;
+}
+
 .nav-link {
-    padding-bottom: 0px;
+
+    padding-bottom: 0px !important;
+    transition: all ease-in-out 150ms;
+
     &:hover {
         border-bottom: 3px solid @clr-red;
         color: white !important;
