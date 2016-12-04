@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-dark bg-inverse">
+    <nav class="navbar navbar-fixed-top navbar-full navbar-dark bg-inverse">
         <a class="navbar-brand" href="#">Vuejs + Tornado Seed</a>
         <ul class="nav navbar-nav">
             <li class="nav-item active">
