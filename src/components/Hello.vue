@@ -30,7 +30,7 @@ module.exports =
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="less">
 h1, h2 {
   font-weight: normal;
 }
