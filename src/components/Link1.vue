@@ -1,5 +1,5 @@
 <template>
-    <h1>Link 1!</h1>
+    <h1>Link 1</h1>
 </template>
 
 <script lang="coffee">

@@ -1,18 +1,18 @@
 <template>
     <nav class="navbar navbar-fixed-top navbar-full navbar-dark bg-inverse">
-        <a class="navbar-brand" href="#">Vuejs + Tornado Seed</a>
+        <router-link class="navbar-brand" to="/">Vuejs + Tornado Seed</router-link>
         <ul class="nav navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
+                <router-link class="nav-link" to="/link1">Link 1</router-link>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <router-link class="nav-link" to="/link2">Link 2</router-link>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
+                <router-link class="nav-link" to="/link3/foobar">Link (w/ params)</router-link>
             </li>
         </ul>
     </nav>

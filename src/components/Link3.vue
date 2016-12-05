@@ -1,11 +1,16 @@
 <template>
-    <h1>Homepage</h1>
+    <div>
+        <h1>Link (w/ params)</h1>
+
+        {{$route.params}}
+
+    </div>
 </template>
 
 <script lang="coffee">
 
 module.exports =
-  name: 'home'
+  name: 'link3'
 
 </script>
 
