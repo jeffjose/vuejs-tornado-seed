@@ -3,11 +3,41 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import App from './App'
 
-# eslint-disable no-new
-new Vue
-  el: '#app'
-  template: '<App/>'
-  components: { App }
-
 Vue.use(VueRouter)
 Vue.use(Vuex)
+
+# Define routes below
+#
+import Home  from './components/Home.vue'
+import Link1 from './components/Link1.vue'
+import Link2 from './components/Link2.vue'
+
+routes = [
+    path: '/'
+    component: Home
+  ,
+    path: '/link1'
+    component: Link1
+  ,
+    path: '/link2'
+    component: Link2
+
+]
+
+# Register the routes
+#
+router = new VueRouter
+  routes:routes
+
+
+# Kickstart the whole process
+#
+# - '#app' is from index.htm
+#
+app = new Vue(
+
+  router     : router
+  template   : '<App/>'
+  components : {App}
+
+  ).$mount('#app')

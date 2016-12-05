@@ -1,6 +1,11 @@
 <template>
   <div id="app" class="container-fluid">
+
       <navbar></navbar>
+
+      <!--Templates get injected below -->
+      <router-view></router-view>
+
   </div>
 </template>
 
@@ -19,7 +24,4 @@ module.exports =
 
 @import "static/bootstrap/app-customizations.less";
 
-#app {
-  //font-family: 'Avenir', Helvetica, Arial, sans-serif;
-}
 </style>
