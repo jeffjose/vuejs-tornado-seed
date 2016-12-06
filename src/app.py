@@ -10,6 +10,9 @@ import tornado.web
 import tornado.options
 import tornado.websocket
 
+# App Libraries
+from server import utils
+
 tornado.options.define("port", default=8000, help="Run on the given port", type=int)
 
 vueAppPath = os.path.abspath(os.path.dirname(__file__))

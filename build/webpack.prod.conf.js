@@ -78,8 +78,9 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // For python files
     new CopyWebpackPlugin([
-            {from: './src/app.py'}
-    ]),
+            {from: './src/app.py'},
+            {from: './src/server', to: 'server/'}
+    ], {ignore: ['*.pyc']}),
     // Favicon
     new FaviconsWebpackPlugin({
 
