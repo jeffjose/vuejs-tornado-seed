@@ -83,7 +83,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // Favicon
     new FaviconsWebpackPlugin({
 
-       logo: './src/static/favicons/prod.png',
+       logo: './src/assets/favicons/prod.png',
        prefix: './static/icons-[hash]/',
     }),
   ]

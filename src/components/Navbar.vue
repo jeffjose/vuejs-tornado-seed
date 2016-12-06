@@ -27,7 +27,7 @@ module.exports =
 
 <style scoped lang="less">
 
-@import "../static/bootstrap/material-colors.less";
+@import "../assets/bootstrap/material-colors.less";
 
 .navbar {
     box-shadow: 0px 2px 9px #888888;

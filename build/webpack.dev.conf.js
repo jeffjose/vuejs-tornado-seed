@@ -33,7 +33,7 @@ module.exports = merge(baseWebpackConfig, {
     }),
     // Favicon
     new FaviconsWebpackPlugin({
-       logo: './src/static/favicons/dev.png',
+       logo: './src/assets/favicons/dev.png',
        prefix: './static/icons-[hash]/',
 
         icons: {

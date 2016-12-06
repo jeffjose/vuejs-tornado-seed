@@ -22,6 +22,6 @@ module.exports =
 
 <style lang="less">
 
-@import "static/bootstrap/app-customizations.less";
+@import "assets/bootstrap/app-customizations.less";
 
 </style>

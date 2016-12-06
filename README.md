@@ -14,3 +14,8 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+
+### Conventions
+
+Mutable files (images, css etc) goes in `src/assets` and immutable files (json, csv etc) goes in `src/static`.
+Both 1 & 2 end up in `dist/static` in production
