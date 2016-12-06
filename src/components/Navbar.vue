@@ -30,7 +30,12 @@ module.exports =
 @import "../assets/bootstrap/material-colors.less";
 
 .navbar {
+
     box-shadow: 0px 2px 9px #888888;
+
+    &.bg-inverse {
+        background-color: @clr-blue !important;
+    }
 }
 
 .nav-link {
