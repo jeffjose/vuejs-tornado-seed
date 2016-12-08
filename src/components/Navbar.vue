@@ -31,7 +31,7 @@ module.exports =
 
 .navbar {
 
-    box-shadow: 0px 2px 9px #888888;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 
     &.bg-inverse {
         background-color: @clr-blue !important;
