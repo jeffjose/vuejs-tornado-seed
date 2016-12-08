@@ -1,0 +1,14 @@
+// Change global material-design colors below -
+//
+
+@import '../../node_modules/material-design-lite/src/color-definitions';
+
+$app-color: $palette-orange-500;
+
+$color-primary: $app-color;
+$color-primary-dark: $app-color;
+$color-accent: $palette-red-500;
+$color-primary-contrast: $palette-red-500;
+$color-accent-contrast: $palette-red-500;
+
+@import "../../node_modules/material-design-lite/src/material-design-lite";

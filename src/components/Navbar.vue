@@ -27,7 +27,7 @@ module.exports =
 
 <style scoped lang="less">
 
-@import "../assets/bootstrap/material-colors.less";
+@import "../assets/material-colors.less";
 
 .navbar {
 
